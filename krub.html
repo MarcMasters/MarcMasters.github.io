@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KRUB · Bronze Studios</title>
+  <meta name="description" content="KRUB: peleas frenéticas entre amigos… con cangrejos. Un juego de Bronze Studios en desarrollo.">
+  <!-- Sustituye TU-URL por la dirección final de tu web -->
+  <meta property="og:title" content="KRUB · Peleas frenéticas con cangrejos">
+  <meta property="og:description" content="Peleas frenéticas entre amigos… con cangrejos.">
+  <meta property="og:image" content="https://TU-URL/assets/krub-hero.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos solo de esta página */
+    .video{position:relative;aspect-ratio:16/9;max-width:56rem}
+    .video iframe,.video .soon{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .video .soon{display:grid;place-items:center;text-align:center;padding:1rem;background:var(--deep);color:var(--light);font-family:var(--pix);font-size:.85rem;line-height:1.8}
+    .gallery{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));margin-top:2rem}
+    .gallery figure{margin:0}
+    .gallery .shot{aspect-ratio:16/9;display:grid;place-items:center;text-align:center;padding:.8rem;background:linear-gradient(180deg,#5a9fc9 0 60%,#2f4f6e 60%);font-size:.9rem}
+    .gallery figcaption{margin-top:.6rem;font-size:.95rem}
+    .back{display:inline-block;margin-bottom:1.5rem;font-weight:700}
+    .features{padding-left:1.2rem;max-width:36rem}
+    .features li{margin:.4rem 0}
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="index.html">Bronze Studios</a>
+  <nav aria-label="Principal">
+    <a href="index.html#juegos">Juegos</a>
+    <a href="index.html#sobre-mi">Sobre mí</a>
+    <a href="index.html#contacto">Contacto</a>
+  </nav>
+</header>
+
+<main>
+  <section class="band surface">
+    <div class="wrap">
+      <a class="back" href="index.html#juegos">Volver a los juegos</a>
+      <h1>KRUB</h1>
+      <p class="lead">Peleas frenéticas entre amigos… con cangrejos.</p>
+    </div>
+  </section>
+
+  <section class="band shallow" id="trailer">
+    <div class="wrap">
+      <h2>Tráiler</h2>
+      <div class="video frame">
+        <!-- 1) Cuando tengas el tráiler, borra el <div class="soon"> de abajo
+             2) Quita los comentarios del iframe y sustituye VIDEO_ID por el código de tu vídeo.
+             Si tu enlace es https://www.youtube.com/watch?v=abc123XYZ, el código es abc123XYZ -->
+        <div class="soon">Tráiler muy pronto</div>
+        <!--
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+          title="Tráiler de KRUB"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+        -->
+      </div>
+
+      <div class="gallery">
+        <!-- Para cada captura o GIF, sustituye un <div class="shot"> por:
+             <img class="frame" src="assets/NOMBRE.gif" alt="Descripción de lo que se ve" loading="lazy"> -->
+        <figure>
+          <div class="frame shot">Aquí va un GIF de una pelea</div>
+          <figcaption>El caos de una partida entre amigos.</figcaption>
+        </figure>
+        <figure>
+          <div class="frame shot">Aquí va una captura de un escenario</div>
+          <figcaption>Un escenario de KRUB.</figcaption>
+        </figure>
+        <figure>
+          <div class="frame shot">Aquí va un GIF de un cangrejo</div>
+          <figcaption>Los cangrejos, listos para pelear.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band mid">
+    <div class="wrap narrow">
+      <h2>El juego</h2>
+      <p>KRUB es un juego de peleas frenéticas para jugar con amigos, al estilo de Duck Game, pero con cangrejos. Las partidas son rápidas, caóticas y hechas para picarse.</p>
+      <ul class="features">
+        <li>Peleas locales entre amigos.</li>
+        <li>Partidas rápidas y frenéticas.</li>
+        <li>Cangrejos en un mundo submarino de pixel art.</li>
+        <!-- Añade aquí las mecánicas, armas, modos o escenarios que quieras destacar -->
+      </ul>
+    </div>
+  </section>
+
+  <section class="band deep">
+    <div class="wrap narrow">
+      <h2>Ficha</h2>
+      <ul class="facts">
+        <li>Estado: en desarrollo</li>
+        <li>Desarrollo: Marcos Olmo López, en solitario</li>
+        <li>Estudio: Bronze Studios</li>
+        <li>Modo: peleas locales entre amigos</li>
+        <!-- Añade: plataformas, número de jugadores, motor, fecha prevista, etc. -->
+      </ul>
+      <div class="actions">
+        <a class="btn" href="https://instagram.com/bronzestudios">Seguir el desarrollo</a>
+        <a class="btn" href="https://marcmasters.itch.io">Ver en itch.io</a>
+        <a class="btn ghost" style="color:var(--light);border-color:var(--light);box-shadow:4px 4px 0 var(--light)" href="mailto:marcosolpez22@gmail.com">Escríbeme</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="band floor">
+  <div class="wrap"><p>© 2026 Bronze Studios</p></div>
+</footer>
+
+</body>
+</html>
