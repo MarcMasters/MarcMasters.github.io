@@ -53,6 +53,9 @@ a:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
 .contact a{font-weight:700;text-decoration-thickness:2px;text-underline-offset:4px}
 .contact a:hover{color:var(--yellow)}
 
+.game > *{min-width:0}
+.game video{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+
 @media (min-width:52rem){
   .game{grid-template-columns:1.1fr 1fr}
   .game.reverse{grid-template-columns:1fr 1.1fr}
