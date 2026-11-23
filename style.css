@@ -29,7 +29,7 @@ a{color:inherit}
 .top nav a:hover{color:var(--yellow)}
 
 h1,h2,h3{font-family:var(--pix);line-height:1.5;font-weight:400;margin:0 0 1.25rem}
-h1{font-size:clamp(1rem,2.8vw,1.6rem);max-width:34rem}
+h1{font-size:clamp(1rem,2.8vw,1.6rem)}/*;max-width:34rem} */
 h2{font-size:clamp(1rem,2.4vw,1.4rem);color:var(--yellow)}
 h3{font-size:1.1rem;color:var(--yellow)}
 .surface h1{color:var(--ink)}
@@ -44,17 +44,18 @@ h3{font-size:1.1rem;color:var(--yellow)}
 .btn.ghost{background:transparent;color:var(--ink)}
 a:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
 
-.game{display:grid;gap:2rem;align-items:center;margin-top:3rem}
+.game{display:grid;gap:2rem;align-items:center;margin-top:3rem;min-width:0}
 .game p{max-width:34rem}
+.game video{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+
 .facts{list-style:none;padding:0;margin:0 0 1.5rem}
 .facts li{padding:.2rem 0;border-bottom:2px dotted rgba(255,255,255,.35);max-width:24rem}
+
 .placeholder{aspect-ratio:1338/867;display:grid;place-items:center;background:linear-gradient(180deg,#7fc6e6 0 55%,#4f9a5a 55% 78%,#3b6f45 78%);color:var(--light);font-family:var(--pix);font-size:1.1rem;text-shadow:3px 3px 0 var(--ink)}
+
 .contact{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.6rem}
 .contact a{font-weight:700;text-decoration-thickness:2px;text-underline-offset:4px}
 .contact a:hover{color:var(--yellow)}
-
-.game > *{min-width:0}
-.game video{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
 
 @media (min-width:52rem){
   .game{grid-template-columns:1.1fr 1fr}

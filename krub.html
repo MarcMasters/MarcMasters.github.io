@@ -14,19 +14,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
   <style>
     /* Estilos solo de esta página */
     .video{position:relative;aspect-ratio:16/9;max-width:56rem}
     .video iframe,.video .soon{position:absolute;inset:0;width:100%;height:100%;border:0}
     .video .soon{display:grid;place-items:center;text-align:center;padding:1rem;background:var(--deep);color:var(--light);font-family:var(--pix);font-size:.85rem;line-height:1.8}
-    .gallery{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));margin-top:2rem}
+    
+    .gallery{display:grid; gap:1.5rem; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); margin-top:2rem}
     .gallery figure{margin:0}
     .gallery .shot{aspect-ratio:16/9;display:grid;place-items:center;text-align:center;padding:.8rem;background:linear-gradient(180deg,#5a9fc9 0 60%,#2f4f6e 60%);font-size:.9rem}
     .gallery figcaption{margin-top:.6rem;font-size:.95rem}
+    
     .back{display:inline-block;margin-bottom:1.5rem;font-weight:700}
     .features{padding-left:1.2rem;max-width:36rem}
     .features li{margin:.4rem 0}
-  </style>
+</style>
 </head>
 <body>
 
@@ -44,6 +47,8 @@
     <div class="wrap">
       <a class="back" href="index.html#juegos">Volver a los juegos</a>
       <h1>KRUB</h1>
+      <!-- <img class="frame" src="assets/krub-portada.png" alt="logotipo" height="10"> -->
+      <!-- <br> -->
       <p class="lead">Peleas frenéticas entre amigos… con cangrejos.</p>
     </div>
   </section>
@@ -52,11 +57,8 @@
     <div class="wrap">
       <h2>Tráiler</h2>
       <div class="video frame">
-
-        <!-- <div class="soon">Tráiler muy pronto</div> -->
-
         <iframe
-          src="https://www.youtube-nocookie.com/embed/uYAEpun_k_Q"
+          src="https://www.youtube-nocookie.com/embed/uYAEpun_k_Q?autoplay=1&mute=1&loop=1&playlist=uYAEpun_k_Q&playsinline=1"
           title="Tráiler de KRUB"
           loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -69,16 +71,16 @@
         <!-- Para cada captura o GIF, sustituye un <div class="shot"> por:
              <img class="frame" src="assets/NOMBRE.gif" alt="Descripción de lo que se ve" loading="lazy"> -->
         <figure>
-          <div class="frame shot">Aquí va un GIF de una pelea</div>
-          <figcaption>El caos de una partida entre amigos.</figcaption>
+          <img class="frame" src="assets/cap1.png" alt="captura del juego" loading="lazy" height="50px">
+          <!-- <figcaption>El caos de una partida entre amigos.</figcaption> -->
         </figure>
         <figure>
-          <div class="frame shot">Aquí va una captura de un escenario</div>
-          <figcaption>Un escenario de KRUB.</figcaption>
+          <img class="frame" src="assets/cap4.png" alt="captura del juego" loading="lazy" height="50px">
+          <!-- <figcaption>Un escenario de KRUB.</figcaption> -->
         </figure>
         <figure>
-          <div class="frame shot">Aquí va un GIF de un cangrejo</div>
-          <figcaption>Los cangrejos, listos para pelear.</figcaption>
+          <img class="frame" src="assets/cap3.png" alt="captura del juego" loading="lazy" height="50px">
+          <!-- <figcaption>Los cangrejos, listos para pelear.</figcaption> -->
         </figure>
       </div>
     </div>
